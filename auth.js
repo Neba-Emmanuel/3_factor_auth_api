@@ -60,14 +60,14 @@ const transporter = nodemailer.createTransport({
     port: 587,
     secure: false,
     auth: {
-      user: 'nebaemmanuel736@gmail.com',
-      pass: 'pudvukunhqvouhcn',
+      user: 'email-address',
+      pass: 'password',
     },
   });
   
   // Define the email content
   const mailOptions = {
-    from: 'nebaemmanuel736@gmail.com',
+    from: 'email-address',
     to: req.body.email,
     subject: 'Registration OTP',
     text: `Your OTP for registration is: ${otp}`,
